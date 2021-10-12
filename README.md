@@ -1,20 +1,5 @@
-# CHRU-ubuntu-21.04
+# ubuntu-20.04-wsl-setup
 
-## Setup global proxy
-```
-10.50.2.2:3128
-```
-
-## Setup APT proxy
-```
-sudo vi /etc/apt/apt.conf.d/proxy.conf
-```
-```
-Acquire {
-  HTTP::proxy  "http://10.50.2.2:3128";
-  HTTPS::proxy "http://10.50.2.2:3128";
-}
-```
 ## Update ubuntu
 
 ```bash
@@ -40,8 +25,6 @@ cat ~/.ssh/id_rsa.pub
 ### Do the cloning
 
 ```bash
-sudo apt install -y git
-git clone git@github.com:pietrodito/CHRU-ubuntu-21.04.git ~/OS-setup
+git clone git@github.com:pietrodito/ubuntu-20.04-wsl-setup.git ~/OS-setup
+cd ~/OS-setup
 ```
-
-## Setup github proxy
