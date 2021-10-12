@@ -38,7 +38,7 @@ ssh-keygen
 cat ~/.ssh/id_rsa.pub
 ```
 
-Then go   [https://github.com/settings/keys][here]
+Then go  https://github.com/settings/keys
 
 ### Do the cloning
 
@@ -47,4 +47,9 @@ sudo apt install -y git
 git clone git@github.com:pietrodito/CHRU-ubuntu-21.04.git ~/OS-setup
 ```
 
-Setup github proxy
+## Setup github proxy
+
+```
+git config --global http.proxy   http://user:pass@10.50.2.2:3128
+git config --global https.proxy https://user:pass@10.50.2.2:3128
+```
