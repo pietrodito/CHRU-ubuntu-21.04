@@ -40,6 +40,7 @@ cat ~/.ssh/id_rsa.pub
 ### Do the cloning
 
 ```bash
+sudo apt install -y git
 git clone git@github.com:pietrodito/CHRU-ubuntu-21.04.git ~/OS-setup
 ```
 
